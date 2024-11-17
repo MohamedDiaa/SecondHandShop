@@ -50,10 +50,13 @@ struct HomeView: View {
 
 
             Text(product.rawValue)
+                .fontWeight(.semibold)
                 .padding(.leading, 10)
                 .padding(.bottom, 10)
+
             }
-        .background(.ultraThickMaterial)
+        .background(
+            .gray.opacity(0.2))
         .padding(10)
         .clipShape(.rect(cornerRadius: 15))
 

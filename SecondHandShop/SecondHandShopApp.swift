@@ -26,7 +26,19 @@ struct SecondHandShopApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            HomeView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                SettingView()
+                    .tabItem {
+                        Image(systemName: "gearshape.fill")
+                        Text("Settings")
+                    }
+
+            }
         }
         .modelContainer(sharedModelContainer)
     }
