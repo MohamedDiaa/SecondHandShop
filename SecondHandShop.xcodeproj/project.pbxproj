@@ -18,6 +18,7 @@
 		8353709D2CEA7F3600BD6B63 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353709C2CEA7F3600BD6B63 /* HomeView.swift */; };
 		835370A42CEA903A00BD6B63 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A32CEA903A00BD6B63 /* Product.swift */; };
 		835370A62CEA9F9800BD6B63 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A52CEA9F9800BD6B63 /* SettingView.swift */; };
+		835370A82CEAA52700BD6B63 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A72CEAA52700BD6B63 /* TabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		8353709C2CEA7F3600BD6B63 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		835370A32CEA903A00BD6B63 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		835370A52CEA9F9800BD6B63 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		835370A72CEAA52700BD6B63 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				835370A32CEA903A00BD6B63 /* Product.swift */,
+				835370A72CEAA52700BD6B63 /* TabItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				835370722CEA7ED700BD6B63 /* ContentView.swift in Sources */,
 				8353709D2CEA7F3600BD6B63 /* HomeView.swift in Sources */,
 				835370A42CEA903A00BD6B63 /* Product.swift in Sources */,
+				835370A82CEAA52700BD6B63 /* TabItem.swift in Sources */,
 				835370A62CEA9F9800BD6B63 /* SettingView.swift in Sources */,
 				835370742CEA7ED700BD6B63 /* Item.swift in Sources */,
 				835370702CEA7ED700BD6B63 /* SecondHandShopApp.swift in Sources */,

@@ -27,15 +27,16 @@ struct SecondHandShopApp: App {
         WindowGroup {
             //ContentView()
             TabView {
+
                 HomeView()
                     .tabItem {
-                        Image(systemName: "house.fill")
-                        Text("Home")
+                        Image(systemName: TabItem.home.systemName)
+                        Text(TabItem.home.rawValue)
                     }
                 SettingView()
                     .tabItem {
-                        Image(systemName: "gearshape.fill")
-                        Text("Settings")
+                        Image(systemName: TabItem.settings.systemName)
+                        Text(TabItem.settings.rawValue)
                     }
 
             }
