@@ -17,25 +17,34 @@ struct HomeView: View {
                                .vehicles]
     var body: some View {
 
-        VStack {
-            HStack {
-                Text("Home")
-                    .fontWeight(.bold)
-                    .font(.largeTitle)
-                Spacer()
-            }
-            .padding(.horizontal)
-            ScrollView{
-                VStack {
-                    ForEach(Products, id: \.self) { product in
+        NavigationView(content: {
 
-                        productView(product: product)
+            VStack {
+
+                ScrollView{
+                    VStack {
+                        ForEach(Products, id: \.self) { product in
+
+                            productView(product: product)
+                        }
+                        
+                        Button {
+
+                        } label: {
+                            Text("Go Checkout")
+                                .tint(.black)
+                        }
+                        .frame(width: 200)
+                        .padding(10)
+                        .background(.gray.opacity(0.3))
+                        .clipShape(Capsule())
                     }
                 }
-                .navigationTitle("Home")
+            } .navigationTitle("Home")
 
-            }
-        }
+        })
+
+
     }
 
     
