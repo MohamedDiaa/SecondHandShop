@@ -1,18 +1,18 @@
 //
-//  ClothesVendorsView.swift
+//  FashionMerchants.swift
 //  SecondHandShop
 //
-//  Created by Mohamed Alwakil on 2024-11-18.
+//  Created by Mohamed Alwakil on 2024-11-20.
 //
 
 import SwiftUI
 
-struct ClothesVendorsView: View {
+struct FashionMerchants: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    ClothesVendorsView()
+    FashionMerchants()
 }

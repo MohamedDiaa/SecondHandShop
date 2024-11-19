@@ -9,48 +9,45 @@ import SwiftUI
 
 struct HomeView: View {
 
-   @State var Products: [Product] = [.appliances ,
-                               .clothes,
-                               .electronics,
-                               .furnitures,
-                               .toys,
-                               .vehicles]
+    @State var Products: [Product] = [.appliances ,
+                                      .clothes,
+                                      .electronics,
+                                      .furnitures,
+                                      .toys,
+                                      .vehicles]
+    @EnvironmentObject var router: Router
+
     var body: some View {
 
-        NavigationView(content: {
+        VStack {
 
-            VStack {
+            ScrollView{
+                VStack {
+                    ForEach(Products, id: \.self) { product in
 
-                ScrollView{
-                    VStack {
-                        ForEach(Products, id: \.self) { product in
-
-                            productView(product: product)
-                        }
-                        
-                        Button {
-
-                        } label: {
-                            Text("Go Checkout")
-                                .tint(.black)
-                        }
-                        .frame(width: 200)
-                        .padding(10)
-                        .background(.gray.opacity(0.3))
-                        .clipShape(Capsule())
+                        productView(product: product)
                     }
+
+                    Button {
+                        router.routeTo(.FashionMerchants)
+                    } label: {
+                        Text("Go Checkout")
+                            .tint(.black)
+                    }
+                    .frame(width: 200)
+                    .padding(10)
+                    .background(.gray.opacity(0.3))
+                    .clipShape(Capsule())
                 }
-            } .navigationTitle("Home")
-
-        })
-
+            }
+        } .navigationTitle("Home")
 
     }
 
-    
+
     @ViewBuilder
     func productView(product: Product) -> some View {
-        
+
         VStack(alignment: .leading) {
             Image(product.imageName)
                 .resizable()
@@ -63,13 +60,13 @@ struct HomeView: View {
                 .padding(.leading, 10)
                 .padding(.bottom, 10)
 
-            }
+        }
         .background(
             .gray.opacity(0.2))
         .padding(10)
         .clipShape(.rect(cornerRadius: 15))
 
-        }
+    }
 }
 
 #Preview {

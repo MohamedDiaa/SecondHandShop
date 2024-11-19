@@ -20,8 +20,10 @@
 		835370A62CEA9F9800BD6B63 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A52CEA9F9800BD6B63 /* SettingView.swift */; };
 		835370A82CEAA52700BD6B63 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A72CEAA52700BD6B63 /* TabItem.swift */; };
 		835370AA2CEAA72800BD6B63 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370A92CEAA72800BD6B63 /* CheckoutView.swift */; };
-		835370AC2CEB7FCB00BD6B63 /* ClothesVendorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370AB2CEB7FCB00BD6B63 /* ClothesVendorsView.swift */; };
 		835370AE2CEB7FDF00BD6B63 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370AD2CEB7FDF00BD6B63 /* Merchant.swift */; };
+		835370B02CED501C00BD6B63 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370AF2CED501C00BD6B63 /* ContainerView.swift */; };
+		835370B32CED507300BD6B63 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370B22CED507300BD6B63 /* Router.swift */; };
+		835370B52CED539F00BD6B63 /* FashionMerchants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370B42CED539F00BD6B63 /* FashionMerchants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +60,10 @@
 		835370A52CEA9F9800BD6B63 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		835370A72CEAA52700BD6B63 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		835370A92CEAA72800BD6B63 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
-		835370AB2CEB7FCB00BD6B63 /* ClothesVendorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesVendorsView.swift; sourceTree = "<group>"; };
 		835370AD2CEB7FDF00BD6B63 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
+		835370AF2CED501C00BD6B63 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		835370B22CED507300BD6B63 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		835370B42CED539F00BD6B63 /* FashionMerchants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionMerchants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 		8353709B2CEA7F2500BD6B63 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				835370B12CED506200BD6B63 /* Utils */,
 				8353709F2CEA8F0900BD6B63 /* Resources */,
 				835370A22CEA8FCC00BD6B63 /* Views */,
 				835370A12CEA8FC300BD6B63 /* Models */,
@@ -178,9 +183,18 @@
 				8353709C2CEA7F3600BD6B63 /* HomeView.swift */,
 				835370A52CEA9F9800BD6B63 /* SettingView.swift */,
 				835370A92CEAA72800BD6B63 /* CheckoutView.swift */,
-				835370AB2CEB7FCB00BD6B63 /* ClothesVendorsView.swift */,
+				835370AF2CED501C00BD6B63 /* ContainerView.swift */,
+				835370B42CED539F00BD6B63 /* FashionMerchants.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		835370B12CED506200BD6B63 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				835370B22CED507300BD6B63 /* Router.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,14 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				835370722CEA7ED700BD6B63 /* ContentView.swift in Sources */,
-				835370AC2CEB7FCB00BD6B63 /* ClothesVendorsView.swift in Sources */,
 				8353709D2CEA7F3600BD6B63 /* HomeView.swift in Sources */,
 				835370A42CEA903A00BD6B63 /* Product.swift in Sources */,
+				835370B32CED507300BD6B63 /* Router.swift in Sources */,
+				835370B02CED501C00BD6B63 /* ContainerView.swift in Sources */,
 				835370A82CEAA52700BD6B63 /* TabItem.swift in Sources */,
 				835370A62CEA9F9800BD6B63 /* SettingView.swift in Sources */,
 				835370742CEA7ED700BD6B63 /* Item.swift in Sources */,
 				835370AA2CEAA72800BD6B63 /* CheckoutView.swift in Sources */,
 				835370702CEA7ED700BD6B63 /* SecondHandShopApp.swift in Sources */,
+				835370B52CED539F00BD6B63 /* FashionMerchants.swift in Sources */,
 				835370AE2CEB7FDF00BD6B63 /* Merchant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

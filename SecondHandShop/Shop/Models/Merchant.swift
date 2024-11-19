@@ -15,3 +15,9 @@ struct Merchant: Identifiable {
 }
 
 
+
+
+var merchants: [Merchant] = []
+
+//key Path
+

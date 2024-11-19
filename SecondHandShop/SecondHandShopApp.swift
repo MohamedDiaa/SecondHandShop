@@ -27,8 +27,8 @@ struct SecondHandShopApp: App {
         WindowGroup {
             //ContentView()
             TabView {
-
-                HomeView()
+                
+                ContainerView()
                     .tabItem {
                         Image(systemName: TabItem.home.systemName)
                         Text(TabItem.home.rawValue)
