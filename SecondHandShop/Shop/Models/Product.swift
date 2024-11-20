@@ -35,6 +35,8 @@ enum Product: String ,CaseIterable {
             return furnitureMerchants
         case .vehicles:
             return vehicleMerchants
+        case .toys:
+            return toyMerchants
         default:
             return []
         }

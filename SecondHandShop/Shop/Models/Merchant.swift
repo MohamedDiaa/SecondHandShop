@@ -69,3 +69,17 @@ var vehicleMerchants: [Merchant] = [
     .init(name: "VolkesVagen", logo: "volkesvagen")
 
 ]
+
+var toyMerchants: [Merchant] = [
+    .init(name: "BANDAI", logo: "bandai"),
+    .init(name: "Barbie", logo: "barbie"),
+    .init(name: "Clementoni", logo: "clementoni"),
+    .init(name: "Walt Disney", logo: "disney"),
+    .init(name: "fisher-price", logo: "fisherprice"),
+    .init(name: "Funskool", logo: "funskool"),
+    .init(name: "Hasbro", logo: "hasbro"),
+    .init(name: "Hot Wheels", logo: "hotwheels"),
+    .init(name: "jELLyCAT", logo: "jellycat"),
+    .init(name: "LEGO", logo: "lego"),
+    .init(name: "MATTEL", logo: "mattel")
+]
