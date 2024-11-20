@@ -67,7 +67,7 @@ struct HomeView: View {
         .onTapGesture {
             switch product {
             case .fashion:
-                router.routeTo(.FashionMerchants)
+                router.routeTo(.Merchants(product))
             default:
                 router.routeTo(.Merchants(product))
             }

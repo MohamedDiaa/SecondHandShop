@@ -10,6 +10,7 @@ import SwiftUI
 struct MerchantsView: View {
     
     let product: Product
+    @State var selected: Merchant?
 
     var body: some View {
 
@@ -26,8 +27,19 @@ struct MerchantsView: View {
 
                     }
                     .padding()
+                    .onTapGesture {
+                        selected = merchant
+                    }
                 }
             }
+            .sheet(item: $selected) { item in
+
+                MerchantDetailsView(merchant: item)
+                    .presentationDetents([.height(500)])
+                    .presentationDragIndicator(.visible)
+                    .presentationCornerRadius(24)
+            }
+
         }
         .scrollIndicators(.hidden)
         .navigationTitle(product.name)
