@@ -15,9 +15,17 @@ struct Merchant: Identifiable {
 }
 
 
+var fashionMerchants: [Merchant] = [
+    .init(name: "Carties", logo: "Cartier"),
+    .init(name: "Chanel", logo: "Chanel"),
+    .init(name: "Louis Vuitton", logo: "LouisVuitton"),
+    .init(name: "Rolex", logo: "Rolex"),
+    .init(name: "Nike", logo: "Nike"),
+    .init(name: "Zara", logo: "Zara"),
+    .init(name: "Gucci", logo: "Gucci"),
+    .init(name: "Prada", logo: "Prada")
+]
 
-
-var merchants: [Merchant] = []
 
 //key Path
 

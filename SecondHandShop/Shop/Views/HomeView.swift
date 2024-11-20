@@ -29,7 +29,7 @@ struct HomeView: View {
                     }
 
                     Button {
-                        router.routeTo(.FashionMerchants)
+                      //  router.routeTo(.FashionMerchants)
                     } label: {
                         Text("Go Checkout")
                             .tint(.black)
@@ -56,15 +56,23 @@ struct HomeView: View {
 
 
             Text(product.rawValue)
-                .fontWeight(.semibold)
-                .padding(.leading, 10)
-                .padding(.bottom, 10)
+                .font(.system(size: 18, weight: .bold))
+                .padding(12)
 
         }
         .background(
-            .gray.opacity(0.2))
+            .gray.opacity(0.4))
         .padding(10)
         .clipShape(.rect(cornerRadius: 15))
+        .padding(10)
+        .onTapGesture {
+            switch product {
+            case .clothes:
+                router.routeTo(.FashionMerchants)
+            default:
+                return
+            }
+        }
 
     }
 }
