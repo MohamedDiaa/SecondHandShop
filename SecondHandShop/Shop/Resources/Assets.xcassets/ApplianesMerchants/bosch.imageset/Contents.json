@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "bosch.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

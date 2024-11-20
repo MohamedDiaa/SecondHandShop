@@ -9,14 +9,14 @@ import SwiftUI
 
 struct MerchantsView: View {
     
-    let merchants: [Merchant]
+    let product: Product
 
     var body: some View {
 
         ScrollView(.vertical) {
             VStack {
 
-                ForEach(merchants) { merchant in
+                ForEach(product.merchants) { merchant in
 
                     HStack(alignment:.center){
                         Image(merchant.logo)
@@ -30,11 +30,11 @@ struct MerchantsView: View {
             }
         }
         .scrollIndicators(.hidden)
-        .navigationTitle("Fashion")
+        .navigationTitle(product.name)
 
     }
 }
 
 #Preview {
-    MerchantsView(merchants: fashionMerchants)
+    MerchantsView(product: .fashion)
 }

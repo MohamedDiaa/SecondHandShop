@@ -14,6 +14,7 @@ class Router: ObservableObject {
 
     enum Destination: Hashable {
         case FashionMerchants
+        case Merchants(Product)
     }
 
     func routeTo(_ destination: Destination) {

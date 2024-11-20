@@ -69,7 +69,7 @@ struct HomeView: View {
             case .fashion:
                 router.routeTo(.FashionMerchants)
             default:
-                return
+                router.routeTo(.Merchants(product))
             }
         }
 

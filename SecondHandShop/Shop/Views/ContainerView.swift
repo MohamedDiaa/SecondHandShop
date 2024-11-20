@@ -20,6 +20,8 @@ struct ContainerView: View {
                     switch destination {
                     case .FashionMerchants:
                         FashionMerchants()
+                    case .Merchants(let product):
+                        MerchantsView(product: product)
                     }
                 }
             }

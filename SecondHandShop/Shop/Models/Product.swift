@@ -20,5 +20,19 @@ enum Product: String ,CaseIterable {
     var imageName: String {
         self.rawValue.lowercased()
     }
+    
+    var name: String {
+        return self.rawValue
+    }
 
+    var merchants:[Merchant] {
+        switch self {
+        case .appliances:
+            return appliancesMerchants
+        case .fashion:
+            return fashionMerchants
+        default:
+            return []
+        }
+    }
 }
