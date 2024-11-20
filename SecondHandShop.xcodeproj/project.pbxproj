@@ -24,6 +24,7 @@
 		835370B02CED501C00BD6B63 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370AF2CED501C00BD6B63 /* ContainerView.swift */; };
 		835370B32CED507300BD6B63 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370B22CED507300BD6B63 /* Router.swift */; };
 		835370B52CED539F00BD6B63 /* FashionMerchants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370B42CED539F00BD6B63 /* FashionMerchants.swift */; };
+		835370B72CEE009000BD6B63 /* MerchantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835370B62CEE009000BD6B63 /* MerchantsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		835370AF2CED501C00BD6B63 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		835370B22CED507300BD6B63 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		835370B42CED539F00BD6B63 /* FashionMerchants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionMerchants.swift; sourceTree = "<group>"; };
+		835370B62CEE009000BD6B63 /* MerchantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				835370A92CEAA72800BD6B63 /* CheckoutView.swift */,
 				835370AF2CED501C00BD6B63 /* ContainerView.swift */,
 				835370B42CED539F00BD6B63 /* FashionMerchants.swift */,
+				835370B62CEE009000BD6B63 /* MerchantsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				835370A42CEA903A00BD6B63 /* Product.swift in Sources */,
 				835370B32CED507300BD6B63 /* Router.swift in Sources */,
 				835370B02CED501C00BD6B63 /* ContainerView.swift in Sources */,
+				835370B72CEE009000BD6B63 /* MerchantsView.swift in Sources */,
 				835370A82CEAA52700BD6B63 /* TabItem.swift in Sources */,
 				835370A62CEA9F9800BD6B63 /* SettingView.swift in Sources */,
 				835370742CEA7ED700BD6B63 /* Item.swift in Sources */,

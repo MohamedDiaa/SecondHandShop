@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
 
     @State var Products: [Product] = [.appliances ,
-                                      .clothes,
+                                      .fashion,
                                       .electronics,
                                       .furnitures,
                                       .toys,
@@ -62,12 +62,11 @@ struct HomeView: View {
         }
         .background(
             .gray.opacity(0.4))
-        .padding(10)
         .clipShape(.rect(cornerRadius: 15))
         .padding(10)
         .onTapGesture {
             switch product {
-            case .clothes:
+            case .fashion:
                 router.routeTo(.FashionMerchants)
             default:
                 return

@@ -11,7 +11,7 @@ import SwiftUI
 enum Product: String ,CaseIterable {
 
     case appliances = "Appliances"
-    case clothes = "Clothes"
+    case fashion = "Fashion"
     case electronics = "Electronics"
     case furnitures = "Furnitures"
     case toys = "Toys"
