@@ -44,5 +44,28 @@ var appliancesMerchants: [Merchant] = [
 ]
 
 
-//key Path
+var furnitureMerchants: [Merchant] = [
+    .init(name: "Ashley", logo: "ashley"),
+    .init(name: "IKea", logo: "ikea"),
+    .init(name: "Meco", logo: "meco"),
+    .init(name: "Murphy", logo: "murphy")
+]
 
+var vehicleMerchants: [Merchant] = [
+    .init(name: "BMW", logo: "bmw"),
+    .init(name: "Chevrolet", logo: "chevrolet"),
+    .init(name: "FIAT", logo: "fiat"),
+    .init(name: "Hyundai", logo: "hyundai"),
+    .init(name: "INFINITI", logo: "infiniti"),
+    .init(name: "JaGuar", logo: "jaguar"),
+    .init(name: "KIA", logo: "kia"),
+    .init(name: "Mercedes", logo: "mercedes"),
+    .init(name: "Mitsubishi", logo: "mitsubishi"),
+    .init(name: "Nissan", logo: "nissan"),
+    .init(name: "Peugeot", logo: "peugeot"),
+    .init(name: "RENAULT", logo: "renault"),
+    .init(name: "Saubaru", logo: "saubaru"),
+    .init(name: "Suzuki", logo: "suzuki"),
+    .init(name: "VolkesVagen", logo: "volkesvagen")
+
+]
