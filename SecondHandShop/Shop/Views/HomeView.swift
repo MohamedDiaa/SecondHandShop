@@ -17,11 +17,16 @@ struct HomeView: View {
                                       .vehicles]
     @EnvironmentObject var router: Router
 
+    @State var searchText = ""
+
+
     var body: some View {
 
         VStack {
 
             ScrollView{
+                searchView()
+                    .padding(.horizontal, 15)
                 VStack {
                     ForEach(Products, id: \.self) { product in
 
@@ -72,6 +77,20 @@ struct HomeView: View {
                 router.routeTo(.Merchants(product))
             }
         }
+
+    }
+
+    @ViewBuilder
+    func searchView() -> some View {
+
+        HStack(spacing: 15) {
+            
+            Image(systemName: "magnifyingglass")
+            TextField("Search", text: $searchText)
+        }
+        .padding(.vertical,10)
+        .padding(.horizontal, 15)
+        .background(Color.primary.opacity(0.06), in: .rect(cornerRadius: 5))
 
     }
 }
